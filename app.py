@@ -10,10 +10,8 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/check/',  methods=['GET', 'POST'])
+@app.route('/check/')
 def check():
-
-    # if request.method == "POST":
 
     return render_template('check.html')
 
