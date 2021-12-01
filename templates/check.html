@@ -1,144 +1,131 @@
 {% extends "layout.html" %} {% block content %}
 <div class="container">
   <div class="row mb-2">
-    <div class="col-md-6" style="border: 1px solid black">
+    <div class="col-md-6">
       <h2>Check</h2>
       <div id="" class="form-text fw-lighter">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore!
       </div>
-      <form class="mt-2 mb-2">
+      <form class="mt-2 mb-2" action="/check/" method="post">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
+          <label for="Pregnancies" class="form-label fs-5"
+            >Pregnancies (Kehamilan)</label
           >
+          <div class="description-input" class="form-text">
+            isikan dengan angka 0 jika anda seorang laki-laki
+          </div>
           <input
-            type="email"
+            type="number"
             class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
+            id="Pregnancies"
+            name="Pregnancies"
+            required
+            \
           />
-          <div id="" class="form-text">
-            We'll never share your email with anyone else.
+        </div>
+        <div class="row">
+          <div class="mb-3 col-md-6">
+            <label for="Glucose" class="form-label fs-5">Glucose</label>
+            <div class="description-input" class="form-text">
+              Kadar gula darah anda dalam tubuh
+            </div>
+            <input
+              type="number"
+              class="form-control"
+              id="Glucose"
+              name="Glucose"
+              required
+              \
+            />
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="BloodPressure" class="form-label fs-5"
+              >BloodPressure
+            </label>
+            <div class="description-input" class="form-text">
+              tekanan darah diastolik (mm Hg)
+            </div>
+            <input
+              type="number"
+              class="form-control"
+              id="BloodPressure"
+              name="BloodPressure"
+              required
+              \
+            />
           </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-          <div id="" class="form-text">
-            We'll never share your email with anyone else.
+        <div class="row">
+          <div class="mb-3 col-md-6">
+            <label for="SkinThickness" class="form-label fs-5"
+              >SkinThickness</label
+            >
+            <div class="description-input" class="form-text">
+              ketebalan kulit bagian trisep (mm)
+            </div>
+            <input
+              type="number"
+              class="form-control"
+              id="SkinThickness"
+              name="SkinThickness"
+              required
+              \
+            />
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="Insulin" class="form-label fs-5">Insulin</label>
+            <div class="description-input" class="form-text">
+              tingkat dalam satuan mu U/ml
+            </div>
+            <input
+              type="number"
+              class="form-control"
+              id="Insulin"
+              name="Insulin"
+              required
+              \
+            />
           </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-          <div id="" class="form-text">
-            We'll never share your email with anyone else.
+        <div class="row">
+          <div class="mb-3 col-md-6">
+            <label for="BMI" class="form-label fs-5">BMI</label>
+            <div class="description-input" class="form-text">
+              indeks massa tubuh (kg/m^2)
+            </div>
+            <input
+              type="number"
+              class="form-control"
+              id="Age"
+              name="Age"
+              required
+              \
+            />
           </div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-          <div id="" class="form-text">
-            We'll never share your email with anyone else.
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-          <div id="" class="form-text">
-            We'll never share your email with anyone else.
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-          <div id="" class="form-text">
-            We'll never share your email with anyone else.
+          <div class="mb-3 col-md-6">
+            <label for="Age" class="form-label fs-5">Age</label>
+            <div class="description-input" class="form-text">Umur</div>
+            <input
+              type="number"
+              class="form-control"
+              id="BMI"
+              name="BMI"
+              required
+              \
+            />
           </div>
         </div>
 
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Submit
-        </button>
+        <button type="submit" class="btn btn-primary">Check</button>
       </form>
     </div>
-    <div class="col-md-4 offset-md-1" style="border: 1px solid black">
-      Image
+    <div class="col-md-4">
+      <img
+        src="{{url_for('static', filename='images/undraw_doctors_hwty.svg')}}"
+        class="img-doctor mt-5"
+      />
     </div>
   </div>
 
-  <!-- Modal -->
-  <div
-    class="modal fade"
-    id="exampleModal"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Hasil</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">...</div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+  {% endblock %}
 </div>
-
-{% endblock %}
