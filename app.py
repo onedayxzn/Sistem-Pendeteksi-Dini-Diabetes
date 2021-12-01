@@ -6,12 +6,14 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def cover():
-    return render_template('cover.html')
+def home():
+    return render_template('home.html')
 
 
-# def home(/home):
-#     return render_template('home.html')
+@app.route('/check/')
+def check():
+
+    return render_template('check.html')
 
 
 if __name__ == '__main__':
