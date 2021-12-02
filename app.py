@@ -1,6 +1,7 @@
-from flask import Flask, render_template, request
-import numpy as np
 import joblib
+import numpy as np
+from flask import Flask, render_template, request
+
 
 app = Flask(__name__)
 
@@ -15,8 +16,8 @@ def check():
     return render_template('check.html')
 
 
-@app.route('/result/', methods=['GET', 'POST'])
-def results_check():
+@app.route('/results/', methods=['GET', 'POST'])
+def results():
 
     if request.method == "POST":
 
@@ -31,8 +32,8 @@ def results_check():
         try:
             prediction = preprocessDataAndPredict(
                 Pregnancies,  Glucose, BloodPressure, SkinThickness, Insulin, Age, BMI)
-            # pass prediction to template
-            return render_template('result.html', prediction=prediction)
+
+            return render_template('results_check.html', prediction=prediction)
 
         except ValueError:
             return "Please Enter valid values"
@@ -56,7 +57,7 @@ def preprocessDataAndPredict(Pregnancies,  Glucose, BloodPressure, SkinThickness
     print(test_data)
 
     # open file
-    file = open("./content/Diabates_model.pkl", "rb")
+    file = open("content/Diabetes_model.pkl", "rb")
 
     # load trained model
     trained_model = joblib.load(file)
