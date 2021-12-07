@@ -1,0 +1,69 @@
+{% extends "layout.html" %} {% block content %}
+
+  <div>
+    <h3 class="text-primary">{{ prediction[1] }}</h3>
+  </div>
+
+  <div>
+    {% if prediction[0] >= 0.7 %}
+    <div class="mt-2">
+      <h2 class="text-center">kemungkinan Kamu</h2>
+    </div>
+      <div class="mt-1 icon-results" >
+         <img  src="{{url_for('static', filename='images/sad.jpg')}}" class="results-images" alt="sad-images">
+      </div>
+      <div>
+        <p class="text-center text-danger text-result">POSITIF TERKENA DIABETES</p>
+    </div>
+    <div class="alert alert-danger px-4" role="alert">
+      <p><span>Ayo jaga kesehatan Kamu</span><br>untuk agar terhindar dari Diabates kamu bisa <a href="/description/">klik tautan ini</a><br>Untuk hasil yang lebih akurat silahkan periksakan ke Dokter</p>
+    </div> 
+    {% endif %}
+  </div>
+
+  <div>
+    {% if prediction[0] <= 0.7 %}
+    <div class="mt-2">
+      <h2 class="text-center">kemungkinan Kamu</h2>
+    </div>
+      <div class="mt-1 icon-results" >
+         <img  src="{{url_for('static', filename='images/happy.jpg')}}" class="results-images" alt="happy-images">
+      </div>
+      <div>
+        <p class="text-center text-success text-result">NEGATIF TERKENA DIABETES</p>
+    </div>
+    <div class="alert alert-success" role="alert">
+      <p><span>Pertahankan Hasilnya.</span><br>untuk agar terhindar dari Diabates kamu bisa <a href="/description/">klik tautan ini</a><br>Untuk hasil yang lebih akurat silahkan periksakan ke Dokter</p>
+    </div> 
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+<footer
+class="
+  d-flex
+  flex-wrap
+  justify-content-between
+  align-items-center
+  py-3
+  border-top
+"
+id="mt"
+>
+<div class="col-md-4 d-flex align-items-center">
+  <a
+    href="/"
+    class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+  >
+    <svg class="bi" width="30" height="24">
+      <use xlink:href="#bootstrap" />
+    </svg>
+  </a>
+  <span class="text-muted" id="text-footer">&copy; 2021 CSD-136, Team</span>
+</div>
+</footer>
+
+{% endblock %}
