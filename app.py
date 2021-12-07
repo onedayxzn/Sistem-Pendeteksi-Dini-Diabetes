@@ -26,12 +26,13 @@ def results():
         BloodPressure = request.form.get('BloodPressure')
         SkinThickness = request.form.get('SkinThickness')
         Insulin = request.form.get('Insulin')
-        Age = request.form.get('Age')
         BMI = request.form.get('BMI')
+        DiabetesPedigreeFunction = request.form.get('DiabetesPedigreeFunction')
+        Age = request.form.get('Age')
 
         try:
             prediction = preprocessDataAndPredict(
-                Pregnancies,  Glucose, BloodPressure, SkinThickness, Insulin, Age, BMI)
+                Pregnancies,  Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age)
 
             return render_template('results_check.html', prediction=prediction)
 
@@ -42,11 +43,11 @@ def results():
     pass
 
 
-def preprocessDataAndPredict(Pregnancies,  Glucose, BloodPressure, SkinThickness, Insulin, Age, BMI):
+def preprocessDataAndPredict(Pregnancies,  Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age):
 
     # keep all inputs in array
     test_data = [Pregnancies,  Glucose, BloodPressure,
-                 SkinThickness, Insulin, Age, BMI]
+                 SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]
     print(test_data)
 
     # convert value data into numpy array
