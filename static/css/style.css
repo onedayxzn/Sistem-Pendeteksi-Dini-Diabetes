@@ -59,6 +59,10 @@
     line-height: 1;
 }
 
+#descbg{
+    background-image: url("./images/blob-scene-haikei.svg");
+}
+
 footer{
     width: 100%;
     background-color: #a2d9ff;
@@ -257,7 +261,5 @@ footer{
         width: 700px;
     }
 }
+
 /* end home */
-
-
-
