@@ -43,7 +43,9 @@
     font-weight: 300;
     line-height: 1;
 }
-
+#descbg{
+    background-image: url("./images/blob-scene-haikei.svg");
+}
 
 /*mengatur responsive home*/
 @media screen and (max-width: 800px){
@@ -80,6 +82,3 @@
         font-size: small;
     }
 }
-
-
-
