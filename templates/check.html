@@ -1,0 +1,184 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Check Diabates</h2>
+      <div id="" class="form-text fw-lighter">
+        People can enjoy life if they have good health
+      </div>
+      <form class="mt-2 mb-2" action="/results/" method="post">
+        <div class="mb-3">
+          <label for="Pregnancies" class="form-label fs-5"
+            >Pregnancies (Kehamilan)</label
+          >
+          <div class="description-input" class="form-text">
+            isikan dengan angka 0 jika anda seorang laki-laki
+          </div>
+          <input
+            type="number"
+            class="form-control"
+            id="Pregnancies"
+            name="Pregnancies"
+            required
+            \
+          />
+        </div>
+        <div class="row">
+          <div class="mb-3 col-md-6">
+            <label for="Glucose" class="form-label fs-5">Glucose</label>
+            <div class="description-input" class="form-text">
+              Kadar gula darah anda dalam tubuh
+            </div>
+            <input
+              step="0.001"
+              type="number"
+              class="form-control"
+              id="Glucose"
+              name="Glucose"
+              required
+              \
+            />
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="BloodPressure" class="form-label fs-5"
+              >BloodPressure
+            </label>
+            <div class="description-input" class="form-text">
+              tekanan darah diastolik (mm Hg)
+            </div>
+            <input
+              step="0.001"
+              type="number"
+              class="form-control"
+              id="BloodPressure"
+              name="BloodPressure"
+              required
+              \
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-3 col-md-6">
+            <label for="SkinThickness" class="form-label fs-5"
+              >SkinThickness</label
+            >
+            <div class="description-input" class="form-text">
+              ketebalan kulit bagian trisep (mm)
+            </div>
+            <input
+              step="0.001"
+              type="number"
+              class="form-control"
+              id="SkinThickness"
+              name="SkinThickness"
+              required
+              \
+            />
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="Insulin" class="form-label fs-5">Insulin</label>
+            <div class="description-input" class="form-text">
+              tingkat dalam satuan mu U/ml
+            </div>
+            <input
+              step="0.001"
+              type="number"
+              class="form-control"
+              id="Insulin"
+              name="Insulin"
+              required
+              \
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-3 col-md-6">
+            <label for="BMI" class="form-label fs-5">BMI</label>
+            <div class="description-input" class="form-text">
+              indeks massa tubuh (kg/m^2)
+            </div>
+            <input
+              step="0.001"
+              type="number"
+              class="form-control"
+              id="Age"
+              name="Age"
+              required
+              \
+            />
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="Age" class="form-label fs-5">Age</label>
+            <div class="description-input" class="form-text">Umur</div>
+            <input
+              type="number"
+              class="form-control"
+              id="BMI"
+              name="BMI"
+              required
+              \
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="DiabetesPedigreeFunction" class="form-label fs-5"
+            >DiabetesPedigreeFunction</label
+          >
+          <div class="description-input" class="form-text">
+            Indikator Riwayat Diabates Dalam Keluarga
+          </div>
+          <input
+            step="0.001"
+            type="number"
+            class="form-control"
+            id="DiabetesPedigreeFunction"
+            name="DiabetesPedigreeFunction"
+            required
+            \
+          />
+        </div>
+        <div class="position-relative">
+          <div class="position-absolute top-0 end-0 position-button">
+            <button type="reset" class="btn btn-danger rounded-pill shadow">
+              reset
+            </button>
+            <button type="submit" class="btn btn-primary rounded-pill shadow">
+              Check
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4">
+      <img
+        class="img-doctor mt-5"
+        src="{{url_for('static', filename='images/undraw_doctors_hwty.svg')}}"
+      />
+    </div>
+  </div>
+</div>
+{% endblock %} {% block footer %}
+
+<footer
+  class="
+    mt-5
+    d-flex
+    flex-wrap
+    justify-content-between
+    align-items-center
+    py-3
+    m-0
+    border-top
+  "
+>
+  <div class="col-md-4 d-flex align-items-center" id="footer-check">
+    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      <svg class="bi" width="30" height="24">
+        <use xlink:href="#bootstrap" />
+      </svg>
+    </a>
+    <span class="text-muted" id="text-footer">&copy; 2021 CSD-136, Team</span>
+  </div>
+</footer>
+
+{% endblock %}

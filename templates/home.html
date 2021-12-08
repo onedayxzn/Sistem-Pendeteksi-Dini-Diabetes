@@ -1,0 +1,126 @@
+{% extends "layout.html" %} {% block content %}
+<section>
+<div class="container">
+    <div class="row mt-5 mb-5 p-3 pb-5" id="home">
+        <div class="col-lg-12 imagecover">
+            <img src="{{url_for('static', filename='images/undraw_medicine_b1ol (1).png')}}" width="100%">
+        </div>
+
+        <div class="col-sm-12 position-relative p-4">
+            <div class="position-absolute top-0 end-0">
+                <img src="{{url_for('static', filename='images/undraw_medicine_b-1-ol.svg')}}" class="img">
+            </div>
+
+            <h1 class="display-1 text-truncate tittle"><b>Check Diabetes.</b></h1>
+
+            <div class="desc mt-4">
+                <p>Pada Website ini anda dapat mengenal lebih dekat mengenai Diabetes dan juga dapat melakukan pengecekan dini diabetes .</p>
+            </div>
+
+            <div class="tombol mt-5">
+                <a href="/check/" class="button rounded-pill shadow text-button">Lets Check</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+<svg class="gel-1 pt-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#A2D9FF" fill-opacity="1" d="M0,192L26.7,165.3C53.3,139,107,85,160,80C213.3,75,267,117,320,144C373.3,171,427,181,480,160C533.3,139,587,85,640,101.3C693.3,117,747,203,800,240C853.3,277,907,267,960,224C1013.3,181,1067,107,1120,85.3C1173.3,64,1227,96,1280,122.7C1333.3,149,1387,171,1413,181.3L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+<section id="about">
+    <div  style="background-color:#A2D9FF;">
+        <div class="row text-center mb-3" >
+            <div class="col pt-3" style="color: white; text-decoration: dotted;">
+                <h2>About</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center pb-3 mt-3 content-about">
+            <div class="col-4 text-about">
+                <p>Check Diabetes dibuat sebagai bentuk pencegahan dan juga upaya menjaga kesehatan sedini mungkin untuk menghindari adanya kemungkinan mengidap diabetes .</p>
+            </div>
+            <div class="col-4 text-about">
+                <p>Diabetes merupakan penyebab kematian terbesar ke-3 di Indonesia berdasarkan SRS indonesia pada tahun 2014 . Indonesia menepati urutan ke-7 sebagai negara dengan kasus diabetes terbanyak .</p>
+            </div>
+            <div class="tombol mt-3 mb-3">
+                <a href="/description/" class="button rounded-pill shadow ">Cari tahu lebih lanjut ...</a>
+            </div>
+        </div>
+    </div>
+</section>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#A2D9FA" fill-opacity="1" d="M0,32L26.7,74.7C53.3,117,107,203,160,234.7C213.3,267,267,245,320,202.7C373.3,160,427,96,480,101.3C533.3,107,587,181,640,202.7C693.3,224,747,192,800,176C853.3,160,907,160,960,165.3C1013.3,171,1067,181,1120,165.3C1173.3,149,1227,107,1280,85.3C1333.3,64,1387,64,1413,64L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
+<section>
+    <div class="row featurette pb-5 m-4 container">
+        <div class="col-md-7 order-md-2 justify-content-center order-2">
+          <h2 class="featurette-heading">Informasi seputar Diabetes. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead" style="text-align: justify;">Ada fitur apa aja sih ? Pada website ini kamu dapat membaca informasi seputar Diabetes. mencari tahu seperti ciri-ciri pengidap diabetes , faktor apa saja yang menjadi pemicu diabetes , dan lain -lain. </p>
+        </div>
+        <div class="col-md-5 order-md-1 order-1">
+        <img src="{{url_for('static', filename='images/undraw_information_tab_ocka (1).png')}}" class="img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="">
+        </div>
+      </div>
+      <div class="row featurette pb-5 m-4 container" >
+        <div class="col-md-7 order-md-1 order-2 ">
+          <h2 class="featurette-heading">Analisa peluang Diabetes <span class="text-muted">It’ll blow your mind.</span></h2>
+          <p class="lead">Memberikan kesempatan untuk melakukan analisa dini . mengenai peluang memiliki penyakit diabetes . seperti pepatah " manjaga lebih baik dari pada mengobati." Upaya analisa ini juga untuk membantu mengenal lebih dekat tentang kesehatan kita .</p>
+        </div>
+        <div class="col-md-5 order-md-2 order-1">
+            <img src="{{url_for('static', filename='images/undraw_file_analysis_8k9b.png')}}" class="img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="">
+        </div>
+      </div>
+</section>
+<section id="aboutus">
+    <div class="container justify-content-center">
+        <div class="row text-center mb-3" >
+            <div class="col">
+                <h2>Made by</h2>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 ">
+            <div class="col justify-content-center">
+              <div class="text-center pt-4">
+                <img src="{{url_for('static', filename='images/Sunflower On Blue by Ruth Black.jpg')}}" width="140" height="140" class="card-img-top-img rounded-circle" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title ">Sukma Ramadhan Asri</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col p-1">
+              <div class="text-center pt-4">
+                <img src="{{url_for('static', filename='images/Sunflower On Blue by Ruth Black.jpg')}}" width="140" height="140" class="img-top-img rounded-circle" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title ">Sarah Salsabila</h5>
+                </div>
+              </div>
+            </div> 
+    </div>
+</section>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#A2D9FF" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,192C384,213,480,235,576,229.3C672,224,768,192,864,181.3C960,171,1056,181,1152,202.7C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+{% endblock %}
+
+{% block footer %}
+
+<footer
+class="
+  d-flex
+  flex-wrap
+  justify-content-between
+  align-items-center
+  py-3
+  m-0
+  border-top
+"
+>
+<div class="col-md-4 d-flex align-items-center">
+  <a
+    href="/"
+    class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+  >
+    <svg class="bi" width="30" height="24">
+      <use xlink:href="#bootstrap" />
+    </svg>
+  </a>
+  <span class="text-muted"  id="text-footer">&copy; 2021 CSD-136, Team</span>
+</div>
+</footer>
+
+{% endblock %}
