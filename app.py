@@ -29,8 +29,8 @@ def results():
         except ValueError:
             return "Please Enter valid values"
 
+    else:
         pass
-    pass
 
 
 def preprocessDataAndPredict(Pregnancies,  Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age):
