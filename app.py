@@ -6,16 +6,6 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 
-@app.route('/')
-def home():
-    return render_template('home.html')
-
-
-@app.route('/check/')
-def check():
-    return render_template('check.html')
-
-
 @app.route('/results/', methods=['GET', 'POST'])
 def results():
 
@@ -39,8 +29,8 @@ def results():
         except ValueError:
             return "Please Enter valid values"
 
+    else:
         pass
-    pass
 
 
 def preprocessDataAndPredict(Pregnancies,  Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age):
@@ -74,6 +64,16 @@ def preprocessDataAndPredict(Pregnancies,  Glucose, BloodPressure, SkinThickness
 @app.route('/description/')
 def description():
     return render_template('description.html')
+
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+
+@app.route('/check/')
+def check():
+    return render_template('check.html')
 
 
 if __name__ == '__main__':
