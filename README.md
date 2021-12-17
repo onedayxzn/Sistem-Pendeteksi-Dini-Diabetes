@@ -49,8 +49,8 @@ Link akses website - **[Klik disini](https://checkdiabetess.herokuapp.com)**
    - [Diabetes Dataset | Kaggle ](https://www.kaggle.com/mathchi/diabetes-data-set)
 2. Framework
 <div style='background-color:white' align='center'>
-   <img src="https://raw.githubusercontent.com/onedayxzn/submission_file/master/bootsrap2.png" width="100px" height='135px'>
-   <img src="https://raw.githubusercontent.com/onedayxzn/submission_file/master/flask.png" width="100px">
+   <a href="https://getbootstrap.com"><img src="https://raw.githubusercontent.com/onedayxzn/submission_file/master/bootsrap2.png" width="100px" height='135px'></a>
+   <a href="https://flask.palletsprojects.com/en/2.0.x/"><img src="https://raw.githubusercontent.com/onedayxzn/submission_file/master/flask.png" width="100px"></a>
 </div><br>
 
 3. Library
@@ -76,5 +76,5 @@ lainnya :
 Deploy Using :
 
 <div style='background-color:white' align='center'>
-   <img src="https://raw.githubusercontent.com/onedayxzn/submission_file/master/Heroku_logo.png" width="500px" >
+  <a href="https://www.heroku.com"> <img src="https://raw.githubusercontent.com/onedayxzn/submission_file/master/Heroku_logo.png" width="500px" ></a>
 <div>
