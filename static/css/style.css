@@ -1,30 +1,15 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
-
-
-#nav{
-    background-color: #a2d9ff;
-  
-}
-
-
-/* check */
 .description-input{
-    color: #344CB7;
-    font-size:10pt;
+    color:red;
 }
 
-/* end check */
-
-
-/* home */
 .desc{
     max-width: 400px;
 }
-
-.tittle{
+.tebel-banget{
     font-weight: 900;
 }
-.text-button{
+.tebel-sedang{
     font-weight: bold;
 }
 .button{
@@ -58,173 +43,45 @@
     font-weight: 300;
     line-height: 1;
 }
-
 #descbg{
     background-image: url("./images/blob-scene-haikei.svg");
 }
-
-footer{
-    width: 100%;
-    background-color: #a2d9ff;
+.type:hover{
+    border-style: groove;
+    border-color: black;
 }
 
-/* end home */
-
-/* check results */
-
-.icon-results{
-  text-align: center;
+.judul:hover{
+        text-shadow:1px 1px 2px #edf6e5;
+}
+.judul2:hover{
+    text-shadow:1px 1px 2px deepskyblue;
+}
+.tab:hover{
+    border-style: groove;
+    border-color: black;
+    letter-spacing: 1px;
+}
+.tab2:hover{
+    border-style: groove;
+    border-color: black;
 }
 
 
-.results-images{
-    width:250px;
-    height:250px;
-}
 
-.text-result{
-    font-size:20pt;
-    font-weight: 900;
-}
-
-.alert{
-    margin-top:20px;
-    margin-left:150px;
-    width: 1000px;
-}
-
-#mt{
-    position: fixed;
-    bottom: 0;
-}
-/* end check results */
-
-/*mengatur responsive*/
-@media screen and (max-width: 411px){
-
-    #link-description{
-        margin-left: -48px;
-    }
-
-    .img{
-        display: none;
-        width: 500px;
-    }
-    .tittle{
-        font-size: 25pt;
-    }
-
-    .imagecover{
-        display:block;
-    }
-    .cap{
-        font-size: small;
-    }
-
-
-    .content-about{
-        display: inline;
-    }
-
-    .text-about{
-        width: 100%;
-        font-size: 12pt;
-    }
-
-    .featurette-heading{
-        margin-left: -25px;
-    }
-
-    .lead{
-        margin-left: -25px;
-        margin-right: 15px;
-    }
-
-    .img-doctor{
-        display:none;
-    }
-
-    .position-button{
-        position: relative;
-        margin-bottom: 10px;
-    }
-
-
-    .results-images{
-        width:150px;
-        height:150px;
-    }
-
-    .text-result{
-        font-size:12pt;
-        font-weight: 900;
-    }
-
-    .alert{
-        margin-top:20px;
-        margin-left:30px;
-        width: 300px;
-    }
-
-    #text-footer{
-        font-size:10pt;
-    }
-
-
-
-    #footer-check{
-        background-color: #a2d9ff;
-        width: 100%;
-        background-color: transparent;
-    }
   
-}
-
+/*mengatur responsive home*/
 @media screen and (max-width: 800px){
-    #link-description{
-        margin-left: -48px;
-    }
-
     .img{
         display: none;
         width: 500px;
     }
-    .tittle{
-        font-size: 25pt;
-    }
+
     .imagecover{
         display:block;
     }
     .cap{
         font-size: small;
-    }
-    .content-about{
-        display: inline;
-    }
-
-    .text-about{
-        width: 100%;
-        font-size: 12pt;
-        padding: 10px 20px;
-    }
-
-    .featurette-heading{
-        margin-left: -35px;
-    }
-
-    .lead{
-        margin-left: -35px;
-        margin-right: 15px;
-    }
-
-    .img-doctor{
-        display:none;
-    }
-
-    .alert{
-        margin-top:20px;
-        margin-left:45px;
-        width: 300px;
     }
 }
 @media screen and (max-width: 1199px){
@@ -232,16 +89,8 @@ footer{
         width: 500px;
         z-index: -1;
     }
-    .tittle{
-        font-weight: 700;
-    }
     .cap{
         font-size: small;
-    }
-    .alert{
-        margin-top:20px;
-        margin-left:150px;
-        width: 700px;
     }
 }
 @media screen and (max-width: 992px){
@@ -249,17 +98,10 @@ footer{
         width: 300px;
         z-index: -3;
     }
-    .tittle{
+    .tebel-banget{
         font-weight: 700;
     }
     .cap{
         font-size: small;
     }
-    .alert{
-        margin-top:20px;
-        margin-left:150px;
-        width: 700px;
-    }
 }
-
-/* end home */
