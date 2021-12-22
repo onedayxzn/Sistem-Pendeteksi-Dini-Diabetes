@@ -66,6 +66,9 @@ Link akses website - **[Klik disini](https://checkdiabetess.herokuapp.com)**
 4. academic paper
    - [WHO Global Report](http://docs.dpaq.de/10605-diabetes_who_embargoed-who-global-report-on-diabetes.pdf)
    - [Prediksi Kemungkinan Diabetes pada Tahap Awal Menggunakan Algoritma KlasifikasiRandom Forest](http://sistemasi.ftik.unisi.ac.id/index.php/stmsi/article/view/1129/355f)
+   - [Woman and Diabetes ](http://p2ptm.kemkes.go.id/uploads/VHcrbkVobjRzUDN3UCs4eUJ0dVBndz09/2017/11/Dr_HM_Subuh_MPPM_Woman_Diabetes.pdf)
+   - [Diabetes](https://www.alodokter.com/diabetes)
+   - [ANALISIS FAKTOR RESIKO PENYEBAB TERJADINYADIABETESMELITUS TIPE 2 PADA WANITA USIA PRODUKTIF  DIPUSKESMAS WAWONASA](https://ejournal.unsrat.ac.id/index.php/ebiomedik/article/view/4554/4082)
 5. Icon & images
 
 lainnya :
