@@ -1,15 +1,30 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
-.description-input{
-    color:red;
+
+
+#nav{
+    background-color: #a2d9ff;
+  
 }
 
+
+/* check */
+.description-input{
+    color: #344CB7;
+    font-size:10pt;
+}
+
+/* end check */
+
+
+/* home */
 .desc{
     max-width: 400px;
 }
-.tebel-banget{
+
+.tittle{
     font-weight: 900;
 }
-.tebel-sedang{
+.text-button{
     font-weight: bold;
 }
 .button{
@@ -43,38 +58,84 @@
     font-weight: 300;
     line-height: 1;
 }
+
 #descbg{
     background-image: url("./images/blob-scene-haikei.svg");
 }
+
+footer{
+    width: 100%;
+    background-color: #a2d9ff;
+}
+
 .type:hover{
     border-style: groove;
     border-color: black;
 }
 
-.judul:hover{
-        text-shadow:1px 1px 2px #edf6e5;
+/* end home */
+
+/* check results */
+
+.icon-results{
+  text-align: center;
 }
+
+
+.results-images{
+    width:250px;
+    height:250px;
+}
+
+.judul:hover{
+    text-shadow:1px 1px 2px #edf6e5;
+}
+
+.text-result{
+    font-size:20pt;
+    font-weight: 900;
+}
+
 .judul2:hover{
     text-shadow:1px 1px 2px deepskyblue;
 }
+
+.alert{
+    margin-top:20px;
+    margin-left:150px;
+    width: 1000px;
+}
+
 .tab:hover{
     border-style: groove;
     border-color: black;
     letter-spacing: 1px;
 }
+
+#mt{
+    position: fixed;
+    bottom: 0;
+}
+
 .tab2:hover{
     border-style: groove;
     border-color: black;
 }
+/* end check results */
 
+/*mengatur responsive*/
+@media screen and (max-width: 411px){
 
+    #link-description{
+        margin-left: -48px;
+    }
 
-  
-/*mengatur responsive home*/
-@media screen and (max-width: 800px){
     .img{
         display: none;
         width: 500px;
+    }
+    .tittle{
+        font-size: 25pt;
     }
 
     .imagecover{
@@ -83,14 +144,127 @@
     .cap{
         font-size: small;
     }
+
+
+    .content-about{
+        display: inline;
+    }
+
+    .text-about{
+        width: 100%;
+        font-size: 12pt;
+    }
+
+    .featurette-heading{
+        margin-left: -25px;
+    }
+
+    .lead{
+        margin-left: -25px;
+        margin-right: 15px;
+    }
+
+    .img-doctor{
+        display:none;
+    }
+
+    .position-button{
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+
+    .results-images{
+        width:150px;
+        height:150px;
+    }
+
+    .text-result{
+        font-size:12pt;
+        font-weight: 900;
+    }
+
+    #alert{
+        width: 300px;
+        margin-left: 30px;
+    }
+
+    #text-footer{
+        font-size:10pt;
+    }
+
+
+
+    #footer-check{
+        background-color: #a2d9ff;
+        width: 100%;
+        background-color: transparent;
+    }
+  
+}
+
+@media screen and (max-width: 800px){
+    #link-description{
+        margin-left: -48px;
+    }
+
+    .img{
+        display: none;
+        width: 500px;
+    }
+    .tittle{
+        font-size: 25pt;
+    }
+    .imagecover{
+        display:block;
+    }
+    .cap{
+        font-size: small;
+    }
+    .content-about{
+        display: inline;
+    }
+
+    .text-about{
+        width: 100%;
+        font-size: 12pt;
+        padding: 10px 20px;
+    }
+
+    .featurette-heading{
+        margin-left: -35px;
+    }
+
+    .lead{
+        margin-left: -35px;
+        margin-right: 15px;
+    }
+
+    .img-doctor{
+        display:none;
+    }
+
+    #alert{
+        margin-top:20px;
+        margin-left:35px;
+        width: 350px;
+    }
 }
 @media screen and (max-width: 1199px){
     .img{
         width: 500px;
         z-index: -1;
     }
+    .tittle{
+        font-weight: 700;
+    }
     .cap{
         font-size: small;
+    }
+    .alert{
+        margin-top:20px;
+        margin-left:150px;
+        width: 700px;
     }
 }
 @media screen and (max-width: 992px){
@@ -98,10 +272,17 @@
         width: 300px;
         z-index: -3;
     }
-    .tebel-banget{
+    .tittle{
         font-weight: 700;
     }
     .cap{
         font-size: small;
     }
+    .alert{
+        margin-top:20px;
+        margin-left:150px;
+        width: 700px;
+    }
 }
+
+/* end home */
