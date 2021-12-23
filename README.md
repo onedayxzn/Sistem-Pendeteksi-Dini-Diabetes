@@ -64,17 +64,23 @@ Link akses website - **[Klik disini](https://checkdiabetess.herokuapp.com)**
    <a href="https://joblib.readthedocs.io/en/latest/"><img src="https://raw.githubusercontent.com/onedayxzn/submission_file/3030a38431c0c9c814e0d0e8adcf92d478159da5/joblib_logo.svg" width="100px"></a>
 
 4. academic paper
-   - [WHO Global Report](http://docs.dpaq.de/10605-diabetes_who_embargoed-who-global-report-on-diabetes.pdf)
-   - [Prediksi Kemungkinan Diabetes pada Tahap Awal Menggunakan Algoritma KlasifikasiRandom Forest](http://sistemasi.ftik.unisi.ac.id/index.php/stmsi/article/view/1129/355f)
-   - [Woman and Diabetes ](http://p2ptm.kemkes.go.id/uploads/VHcrbkVobjRzUDN3UCs4eUJ0dVBndz09/2017/11/Dr_HM_Subuh_MPPM_Woman_Diabetes.pdf)
-   - [ANALISIS FAKTOR RESIKO PENYEBAB TERJADINYADIABETESMELITUS TIPE 2 PADA WANITA USIA PRODUKTIF  DIPUSKESMAS WAWONASA](https://ejournal.unsrat.ac.id/index.php/ebiomedik/article/view/4554/4082)
+   - [Prediksi Kemungkinan Diabetes pada Tahap Awal Menggunakan Algoritma Klasifikasi Random Forest](http://sistemasi.ftik.unisi.ac.id/index.php/stmsi/article/view/1129/355f)
+   - [ANALISIS FAKTOR RESIKO PENYEBAB TERJADINYA DIABETES MELITUS TIPE 2 PADA WANITA USIA PRODUKTIF  DI PUSKESMAS WAWONASA](https://ejournal.unsrat.ac.id/index.php/ebiomedik/article/view/4554/4082)
+   
 5. Icon & images
+   - [undraw](undraw.co)
+   - [pinterest](pinterest.com)
+   - [icon](https://icons.getbootstrap.com)
+   - [unsplash](https://unsplash.com)
 
 lainnya :
 
+- [WHO Global Report](http://docs.dpaq.de/10605-diabetes_who_embargoed-who-global-report-on-diabetes.pdf)
+- [Woman and Diabetes ](http://p2ptm.kemkes.go.id/uploads/VHcrbkVobjRzUDN3UCs4eUJ0dVBndz09/2017/11/Dr_HM_Subuh_MPPM_Woman_Diabetes.pdf)
+- [Diabetes](https://www.alodokter.com/diabetes)
 - [Machine Learning with flask](https://medium.com/@nutanbhogendrasharma/deploy-machine-learning-model-with-flask-on-heroku-cd079b692b1d)
 - [k-Neighbors Classifier with GridSearchCV Basics](https://medium.com/@erikgreenj/k-neighbors-classifier-with-gridsearchcv-basics-3c445ddeb657)
-- [Diabetes](https://www.alodokter.com/diabetes)
+
 
 Deploy Using :
 
